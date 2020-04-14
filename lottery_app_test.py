@@ -1,62 +1,35 @@
-Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 1,2,3,4,5,6
-Traceback (most recent call last):
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 31, in <module>
-    main()
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 9, in main
-    matched_numbers = user_numbers.intersection(lottery_numbers)
-AttributeError: 'list' object has no attribute 'intersection'
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 1,2,3,4,5,6
-Traceback (most recent call last):
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 31, in <module>
-    main()
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 9, in main
-    matched_numbers = user_numbers.intersection(lottery_numbers)
-AttributeError: 'list' object has no attribute 'intersection'
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 1,2,3,4,5,6
-Traceback (most recent call last):
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 31, in <module>
-    lottery_main()
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 9, in lottery_main
-    matched_numbers = user_numbers.intersection(lottery_numbers)
-AttributeError: 'list' object has no attribute 'intersection'
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-['Enter your 6 numbers', ' separated by commas: ']
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
- separated by commas: 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Traceback (most recent call last):
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 32, in <module>
-    lottery_main()
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 5, in lottery_main
+import random as rd
+
+def lottery_main():
+    #Ask player for numbers
     user_numbers = get_player_numbers()
-  File "C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py", line 15, in get_player_numbers
-    input_csv = input("Enter your 6 numbers, separated by commas: ".split(",")[4])
-IndexError: list index out of range
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 1,2,3,4,5,6
-You matched {1, 5}. you won $10000!
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 1,2,3,4,5,6
-You matched {2, 3, 5}. you won $1000000!
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 1,2,3,4,5,6
-You matched {1, 5}. you won $10000!
->>> 
- RESTART: C:\Users\Surender\Documents\Python & PostgreSQL Developer\lottery_app.py 
-Enter your 6 numbers, separated by commas: 2,3,6,5,7,8
-You matched {8, 2}. you won $10000!
->>> 
+    #Calculate lottery numbers
+    lottery_numbers = create_lottery_numbers()
+    #Print out the winning
+    matched_numbers = user_numbers.intersection(lottery_numbers)
+    print("You matched {}. you won ${}!".format(matched_numbers, 100**len(matched_numbers)))
+
+# User can pick 6 numbers
+
+def get_player_numbers():
+    input_csv = input("Enter your 6 numbers, separated by commas: ")
+    # Creating a set of integers from this number_csv
+    number_list = input_csv.split(",")
+    #int_set = [int(i) for i in input_csv.split(",")] #List comprehension
+    int_set = {int(i) for i in number_list}
+    return int_set
+
+# Lottery calculates 6 random numbers (between 1 and 20)
+def create_lottery_numbers():
+    set_values = set() # empty set
+    while len(set_values) < 6:
+    # for index in range(6): # range in [0,1,2,3,4,5]
+        set_values.add(rd.randint(1, 20))
+    return set_values
+
+lottery_main()
+
+
+
+
+
