@@ -1,4 +1,4 @@
-### Building a simple lottery app ####
+### Simple lottery app ####
 import random as rd
 
 def lottery_main():
