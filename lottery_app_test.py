@@ -2,16 +2,15 @@
 import random as rd
 
 def lottery_main():
-    #Ask player for numbers
+    #Asking players for numbers
     user_numbers = get_player_numbers()
-    #Calculate lottery numbers
+    #Calculating lottery numbers
     lottery_numbers = create_lottery_numbers()
-    #Print out the winning
+    #Printing out the winning
     matched_numbers = user_numbers.intersection(lottery_numbers)
     print("You matched {}. you won ${}!".format(matched_numbers, 100**len(matched_numbers)))
 
-# User can pick 6 numbers
-
+# User choice of picking 6 numbers
 def get_player_numbers():
     input_csv = input("Enter your 6 numbers, separated by commas: ")
     # Creating a set of integers from this number_csv
