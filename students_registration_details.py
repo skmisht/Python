@@ -1,4 +1,4 @@
-## Student's registration APP (Working Process)
+## Student's registration APP (InProgress)
 # Tasks needed to be Complete - Implement Grade system (Merit, Non-mertic), Scholarshiop facilties
 
 # hands on nested Dictionary
