@@ -1,5 +1,5 @@
 # Student's registration APP (InProgress)
-# need define "Class" instead of Dictionary
+# need to define "Class" instead of Dictionary
 # Tasks need to be complete - Implement Grade system (Merit, Non-mertic), Scholarshiop facilties
 
 # hands on nested Dictionary
