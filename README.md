@@ -1,5 +1,5 @@
 # Python
-Python fundamentals:
+Python fundamentals (python_fundamentals1.ipynb)
   - Deep dive into input/output(I/O)
   - Using String method
   - Random and string module
