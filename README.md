@@ -5,7 +5,7 @@ Python fundamentals (Python_fundamentals1.ipynb)
   - Random and string module
   - Calculations and Mathematical excercises
 
-Decision-making with if-elif-else:
+Decision-making with if-elif-else (decision_making_with_if-elif-else.ipynb):
   - One-way decision-making with if
   - Two-way decision-makign with if-else
   - Multi-way decision-making with if-elif-else
