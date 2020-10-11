@@ -15,7 +15,7 @@ Decision-making with if-elif-else (decision_making_with_if-elif-else.ipynb):
   - nested if statement
 
 
-Repetition Control Structure: While and for loops
+Repetition Control Structure: While and for loops (repetition_control_structure_while-for_loops.ipynb)
   - Repetition with while
   - Counting while Loops
   - User-Controlled Loops
