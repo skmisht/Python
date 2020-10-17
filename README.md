@@ -19,7 +19,6 @@ Repetition Control Structure: While and for loops (repetition_control_structure_
   - Repetition with while
   - Counting while Loops
   - User-Controlled Loops
-  - while loop: General Principle
   - Infinite Loop and break
   - Sentinel-Controlled Loop
   - Application: Repeating Menu
@@ -34,5 +33,4 @@ Repetition Control Structure: While and for loops (repetition_control_structure_
   - Application: Validate Username
   - Creating Strong Passwords: The Phrase Approach
   - Using for as a Counting Loop
-  - The continue Statement
-  - The pass Statement
+ 
