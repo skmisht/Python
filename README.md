@@ -34,7 +34,7 @@ Repetition Control Structure: While and for loops (repetition_control_structure_
   - Creating Strong Passwords: The Phrase Approach
   - Using for as a Counting Loop
  
- Data Structures ( )
+ Data Structures (datastructure_exercises.ipynb)
   - Lists
   - list comprehension
   - Tuples and Sets
