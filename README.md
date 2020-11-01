@@ -1,4 +1,5 @@
 # Python
+
 Python fundamentals (Python_fundamentals1.ipynb)
   - Deep dive into input/output(I/O)
   - Using String method
@@ -40,5 +41,3 @@ Repetition Control Structure: While and for loops (repetition_control_structure_
   - Tuples and Sets
 
 File I/O and Exceptions Handlling (file_Input_Output_ExceptionHandlling.ipynb)
-  - 
-  - 
