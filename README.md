@@ -43,5 +43,3 @@ Repetition Control Structure: While and for loops (repetition_control_structure_
 File I/O and Exceptions Handlling (file_Input_Output_ExceptionHandlling.ipynb)
 
 Functions & Modular Development
-
-Unit Testing
